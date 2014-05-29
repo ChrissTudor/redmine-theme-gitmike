@@ -408,13 +408,18 @@ div.issue table.attributes th {
 	padding-bottom: 0;
 }
 
-h3.subtitle {
+h3.subtitle, #release-notes-display > p:first-child, #issue_checklist > p:first-child {
 	border-bottom: 1px solid #e7e7e7;
 	font-size: 18px;
 	font-weight: normal;
 	padding: 15px 0 6px;
 	margin-bottom: 8px;
 }
+
+#release-notes-display > p:first-child strong, #issue_checklist > p:first-child strong {
+	font-weight: normal;
+}
+
 .issue-section p {
 	margin-bottom: 8px;
 	margin-top: 0;
@@ -883,4 +888,8 @@ div#main div#content div.issue div.description + hr {
 div#history span.button_info {
 	display: none;
 }
+/*
+	end
+*/
+
 
