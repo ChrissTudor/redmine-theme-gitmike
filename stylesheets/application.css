@@ -756,7 +756,7 @@ table.progress td.todo, table.list.issues table.progress td.todo:first-child {
     padding: 10px;
 }
 .issue-attachaments  div.thumbnails {
-	display: none;
+	display: block;
 }
 
 .issue-section .issue td.status span {
