@@ -343,7 +343,7 @@ tr.even.priority-highest { color: #900; font-weight: bold; }
 
 table.list tbody tr.even.priority-highest:hover { color: #900; font-weight: bold; }
 
-tr.even.priority-highest { background: #ffd4d4; }
+/*tr.even.priority-highest { background: #ffd4d4; }*/
 tr.priority-highest a, tr.priority-highest:hover a { color: #900; }
 tr.odd.priority-highest td, tr.even.priority-highest td { border-color: #ffb4b4; }
 tr.odd.priority-high2 { color: #900; }
@@ -355,7 +355,7 @@ tr.even.priority-high2 { color: #900; }
 
 table.list tbody tr.even.priority-high2:hover { color: #900; }
 
-tr.even.priority-high2 { background: #ffd4d4; }
+/*tr.even.priority-high2 { background: #ffd4d4; }*/
 tr.priority-high2 a { color: #900; }
 tr.odd.priority-high2 td, tr.even.priority-high2 td { border-color: #ffb4b4; }
 tr.odd.priority-high3 { color: #900; }
