@@ -6,6 +6,12 @@
  * @see https://github.com/makotokw/redmine-theme-gitmike
  * @license GPL3 License
  */
+
+
+
+
+
+
 body { color: #333; background-color: #fff; line-height: 1.4; }
 .clearfix:after {
      visibility: hidden;
@@ -27,6 +33,212 @@ body { color: #333; background-color: #fff; line-height: 1.4; }
 
 #main { background: transparent; margin: 15px 15px 0px 15px; }
 
+
+/*ISSUES LIST SECTION*/
+
+/*________________________*/
+
+table.list.issues .odd {
+    background: none;
+}
+table.list.issues a:hover {
+    text-decoration: none !important;
+}
+table.list.issues .context-menu-selection {
+    background: rgba(80, 122, 170, 0.70) !important;
+}
+table.list.issues thead tr th a {
+    color: #5a6fae !important;
+    font-weight: 900;
+}
+table.list.issues a, table.list.issues a:link, table.list.issues a:visited, table.list.issues a:hover {
+    color: #000;
+}
+table.list.issues tr {
+    color: #000 !important;
+}
+table.list.issues tr:hover {
+    background: rgba(80, 122, 170, 0.51) !important;
+}
+table.list.issues .tracker-2 {
+    background-color: #F0F0F0;
+}
+table.list.issues .subject {
+    max-width: 630px;
+}
+/* bug issues */
+
+table.list.issues .tracker-1 .tracker {
+    background: url("../images/icon-bug.png") no-repeat center center;
+    color: transparent;
+    overflow: hidden;
+    text-indent: -500px
+}
+table.list.issues .tracker-1.priority-5 .tracker {
+    background: url("../images/icon-bug-critical.png") no-repeat center center;
+}
+/* table borders */
+
+table.list.issues thead tr th {
+    border-color: #C9C9C9;
+}
+table.list.issues thead tr th a {
+    font-size: 13px;
+}
+table.list.issues tbody tr td {
+    border-color: #C9C9C9;
+}
+table.list.issues th {
+    background-color: #DBDBDB;
+}
+table.list tr.issue a {
+    color: #000 !important;
+}
+/* culori bg issues in functie de status */
+
+table.list.issues tr.status-1 td.subject {
+    background: linear-gradient(to right, rgba(204, 250, 250, 0) 0%, rgba(204, 250, 250, 1) 100%);
+}
+table.list.issues tr.status-1 td.status {
+    background: linear-gradient(to left, rgba(204, 250, 250, 0) 0%, rgba(204, 250, 250, 1) 100%);
+}
+table.list.issues tr.status-2 td.subject {
+    background: linear-gradient(to right, rgba(118, 169, 220, 0) 0%, rgba(118, 169, 220, 1) 100%);
+}
+table.list.issues tr.status-2 td.status {
+    background: linear-gradient(to left, rgba(118, 169, 220, 0) 0%, rgba(118, 169, 220, 1) 100%);
+}
+table.list.issues tr.status-3 td.subject {
+    background: linear-gradient(to right, rgba(255, 176, 162, 0) 0%, rgba(255, 176, 162, 1) 100%);
+}
+table.list.issues tr.status-3 td.status {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 176, 162, 1) 100%);
+}
+table.list.issues tr.status-5 td.subject {
+    background: linear-gradient(to right, rgba(164, 244, 126, 0) 0%, rgba(164, 244, 126, 1) 100%);
+}
+table.list.issues tr.status-5 td.status {
+    background: linear-gradient(to left, rgba(164, 244, 126, 0) 0%, rgba(164, 244, 126, 1) 100%);
+}
+table.list.issues tr.status-8 td.subject {
+    background: linear-gradient(to right, rgba(177, 210, 242, 0) 0%, rgba(177, 210, 242, 1) 100%);
+}
+table.list.issues tr.status-8 td.status {
+    background: linear-gradient(to left, rgba(250, 250, 250, 0) 0%, rgba(177, 210, 242, 1) 100%);
+}
+table.list.issues tr.status-9 td.subject {
+    background: linear-gradient(to right, rgba(216, 91, 77, 0) 0%, rgba(216, 91, 77, 1) 100%);
+}
+table.list.issues tr.status-9 td.status {
+    background: linear-gradient(to left, rgba(216, 91, 77, 0) 0%, rgba(216, 91, 77, 1) 100%);
+}
+table.list.issues tr.status-10 td.subject {
+    background: linear-gradient(to right, rgba(217, 173, 254, 0) 0%, rgba(217, 173, 254, 1) 100%);
+}
+table.list.issues tr.status-10 td.status {
+    background: linear-gradient(to left, rgba(217, 173, 254, 0) 0%, rgba(217, 173, 254, 1) 100%);
+}
+table.list.issues tr.status-20 td.subject {
+    background: linear-gradient(to right, rgba(190, 124, 248, 0) 0%, rgba(190, 124, 248, 1) 100%);
+}
+table.list.issues tr.status-20 td.status {
+    background: linear-gradient(to left, rgba(190, 124, 248, 0) 0%, rgba(190, 124, 248, 1) 100%);
+}
+
+/*_______________*/
+
+/* SECTIUNE ISSUE*/
+
+div.issue {
+	background:none !important;
+}
+
+#issue_tree table.list.issues tbody tr td,
+#relations table.list.issues tbody tr td {
+    border-color: transparent !important;
+}
+
+#issue_tree table.list.issues .context-menu-selection,
+#relations table.list.issues .context-menu-selection {
+	background: none !important;
+}
+
+#issue_tree table.list.issues tr:hover,
+#relations table.list.issues tr:hover {
+    background: none !important;
+}
+
+table.list.issues a.issue {
+	background:none;
+}
+
+div.description {
+	/*background: linear-gradient(to bottom, rgba(105, 124, 248, 0) 0%, rgba(190, 124, 248, 1) 100%);*/
+	overflow: visible;
+}
+
+#history div.journal {
+	padding-top:10px;
+}
+
+div.issue.status-1 table.attributes td.status {
+    font-weight: bold;
+    color:rgba(204, 250, 250, 1);
+}
+
+div.issue.status-2 table.attributes td.status {
+    font-weight: bold;
+    color:rgba(118, 169, 220, 1);
+}
+
+div.issue.status-3 table.attributes td.status {
+    font-weight: bold;
+    color:rgba(255, 176, 162, 1);
+}
+
+div.issue.status-5 table.attributes td.status {
+    font-weight: bold;
+    color:rgba(164, 244, 126, 1);
+}
+
+div.issue.status-8 table.attributes td.status {
+    font-weight: bold;
+    color:rgba(177, 210, 242, 1) ;
+}
+
+div.issue.status-9 table.attributes td.status {
+    font-weight: bold;
+    color:rgba(216, 91, 77, 1) ;
+}
+
+div.issue.status-10 table.attributes td.status {
+    font-weight: bold;
+    color:rgba(217, 173, 254, 1);
+}
+
+div.issue.status-20 table.attributes td.status {
+    font-weight: bold;
+    color:rgba(190, 124, 248, 1);
+}
+
+/*
+	Hacks for Luxury button plugin issues
+*/
+div#main div#content div.issue div.lu_issue_confirms_link {
+	display:none;
+}
+
+div#main div#content div.issue div.description + hr {
+	display:none;
+}
+
+div#history span.button_info {
+	display: none;
+}
+/*
+	end
+*/
+
 #top-menu { font: 13px Helvetica, arial, freesans, clean, sans-serif; padding: 10px 10px 2px 20px; background-color: #f3f3f3; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #f3f3f3)); background-image: -webkit-linear-gradient(#f9f9f9, #f3f3f3); background-image: -moz-linear-gradient(#f9f9f9, #f3f3f3); background-image: -o-linear-gradient(#f9f9f9, #f3f3f3); background-image: linear-gradient(#f9f9f9, #f3f3f3); background-repeat: repeat-x; text-shadow: 0 1px 0 white; border-bottom: 1px solid #e5e5e5; }
 #top-menu #loggedas { color: #222; }
 #top-menu a { color: #333; font-weight: bold; padding: 5px; margin-right: 0px; -webkit-transition: color 0.15s ease-in 0; -moz-transition: color 0.15s ease-in 0; -o-transition: color 0.15s ease-in 0; transition: color 0.15s ease-in 0; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
@@ -44,7 +256,7 @@ div.filters h2 .scope_title a { color: #444; }
 div#content { margin-right: 300px; width: auto; }
 div#main.nosidebar div#content { margin-right: 0px; }
 
-#sidebar { width: 260px !important; padding: 0px 10px 20px 15px !important; background: whiteSmoke; border: 1px solid #ddd; zoom: 1; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); }
+#sidebar { width: 260px !important; padding: 0px 10px 20px 15px !important; background: whiteSmoke; border: 1px solid #A3A3A3; zoom: 1; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); }
 
 div#content > h2, div#content h2.contacts_header { border-bottom: 1px solid #d8e6ec; background: #E6F1F6; text-shadow: 0px 1px white; -webkit-border-top-left-radius: 2px; -moz-border-radius-topleft: 2px; border-top-left-radius: 2px; -webkit-border-top-right-radius: 2px; -moz-border-radius-topright: 2px; border-top-right-radius: 2px; padding: 8px 20px; margin: -6px -10px 10px; }
 div#content > div.filters h2, div#content > #add-news > h2, div#content > #add-message > h2, div#content > #add-document > h2 { border-bottom: 1px solid #C5D5DD; background: #E6F1F6; text-shadow: 0px 1px white; -webkit-border-top-left-radius: 4px; -moz-border-radius-topleft: 4px; border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius-topright: 4px; border-top-right-radius: 4px; padding: 8px 20px; margin: -6px -10px 10px; }
@@ -63,6 +275,8 @@ div#content h2.contacts_header { padding-bottom: 10px; /* white-space: nowrap;*/
 p.breadcrumb { margin: 4px 0 15px 0; }
 
 div#content > div.contextual { margin-top: 10px; margin-right: 10px; }
+div#content > div.contextual a, div#content > div.contextual a:hover {color: #FFFFFF;}
+div#content > div.contextual a:hover {text-decoration: underline;}
 
 #roadmap { margin: 10px; }
 
@@ -87,7 +301,7 @@ div.issue { background: #FFD; margin-bottom: 6px; border: 0 none; margin: 0; pad
 div.issue.tooltip { padding: 6px; margin: 0 0 6px 0; }
 div.contact.details, div.deal.details { padding: 15px !important; margin: -11px -11px 6px; }
 
-#sidebar h3 { color: #222; }
+#sidebar h3 { color: #222; border-bottom: 1px solid #d2d2d2;}
 
 #footer { background-color: #F8F8F8; border: 0px; border-top: 1px solid #E0E0E0; color: #636363; margin-top: 45px; padding: 15px; }
 #footer .bgl .bgr:after { content: " and gitmike theme"; }
@@ -313,7 +527,10 @@ a.buy-button.blue { background: #4C728A !important; background-image: -webkit-gr
 .next-prev-links-container {position: relative; width: 100%;}
 .next-prev-links-container .next-prev-links {top: -30px; right: 0; position: absolute; }
 .controller-issues.action-show #main {margin-top: 30px; background: none transparent;}
-.issue-title, div#content > h2, div#content h2.contacts_header {background: #353e47; /* Old browsers */ background: -moz-linear-gradient(top,  #353e47 0%, #2a333a 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#353e47), color-stop(100%,#2a333a)); /* hrome,Safari4+ */ background: -webkit-linear-gradient(top,  #353e47 0%,#2a333a 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top,  #353e47 0%,#2a333a 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top,  #353e47 0%,#2a333a 100%); /* IE10+ */ background: linear-gradient(to bottom,  #353e47 0%,#2a333a 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353e47', endColorstr='#2a333a',GradientType=0 ); /* IE6-9 */  color: #fff; text-shadow: 0 0 0 #2a333a; margin: -6px -16px 15px;   padding: 10px; border-radius: 3px 3px 0 0; -webkit-border-radius: 3px 3px 0 0; -moz-border-radius: 3px 3px 0 0; min-height: 55px; position: relative;}
+.issue-title, div#content > h2, div#content h2.contacts_header {background: #353e47; /* Old browsers */ background: -moz-linear-gradient(top,  #353e47 0%, #2a333a 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#353e47), color-stop(100%,#2a333a)); /* hrome,Safari4+ */ background: -webkit-linear-gradient(top,  #353e47 0%,#2a333a 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top,  #353e47 0%,#2a333a 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top,  #353e47 0%,#2a333a 100%); /* IE10+ */ background: linear-gradient(to bottom,  #353e47 0%,#2a333a 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353e47', endColorstr='#2a333a',GradientType=0 ); /* IE6-9 */  color: #fff; text-shadow: 0 0 0 #2a333a; margin: -6px -16px 15px;   padding: 10px; border-radius: 3px 3px 0 0; -webkit-border-radius: 3px 3px 0 0; -moz-border-radius: 3px 3px 0 0; min-height: 55px;}
+.issue-title {
+	 position: relative;
+}
 div#content > h2, div#content h2.contacts_header {
 	margin: -6px -10px 10px;
 	min-height: 0;
@@ -498,7 +715,7 @@ div.issue table.attributes th.status, div.issue table.attributes th.due-date {fo
 #issue_tree table.list.issues tr:hover, #relations table.list.issues tr:hover {
 	background-color: #ecf3f6 !important;
 }
-#issue_tree table.list.issues .context-menu-selection, #relations table.list.issues .context-menu-selection {
+#issue_tree table.list.issues .context-menu-selection, #relations table.list.issues .context-menu-selection, #issue_tree table.list.issues .context-menu-selection:hover, #relations table.list.issues .context-menu-selection:hover {
 	background-color: #defad5 !important;
 }
 table.progress td.todo, table.list.issues table.progress td.todo:first-child {
@@ -687,209 +904,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eec9ca', end
 
 }
 
-/*ISSUES LIST SECTION*/
-
-/*________________________*/
-
-table.list.issues .odd {
-    background: none;
+#sidebar .sidebar-resources {
+	background-color: #C7D9E0;
+    border-radius: 3px 3px 0 0; -webkit-border-radius: 3px 3px 0 0; -moz-border-radius: 3px 3px 0 0;
+    margin: 0 -10px 0 -15px;
+    padding: 10px 10px 3px 15px;
 }
-table.list.issues a:hover {
-    text-decoration: none !important;
+#sidebar .sidebar-resources h3 {
+	margin-top: 0;
+	border-bottom: 1px solid #a3a3a3;
+	margin-bottom: 3px;
 }
-table.list.issues .context-menu-selection {
-    background: rgba(80, 122, 170, 0.70) !important;
-}
-table.list.issues thead tr th a {
-    color: #5a6fae !important;
-    font-weight: 900;
-}
-table.list.issues a, table.list.issues a:link, table.list.issues a:visited, table.list.issues a:hover {
-    color: #000;
-}
-table.list.issues tr {
-    color: #000 !important;
-}
-table.list.issues tr:hover {
-    background: rgba(80, 122, 170, 0.51) !important;
-}
-table.list.issues .tracker-2 {
-    background-color: #F0F0F0;
-}
-table.list.issues .subject {
-    max-width: 630px;
-}
-/* bug issues */
-
-table.list.issues .tracker-1 .tracker {
-    background: url("../images/icon-bug.png") no-repeat center center;
-    color: transparent;
-    overflow: hidden;
-    text-indent: -500px
-}
-table.list.issues .tracker-1.priority-5 .tracker {
-    background: url("../images/icon-bug-critical.png") no-repeat center center;
-}
-/* table borders */
-
-table.list.issues thead tr th {
-    border-color: #C9C9C9;
-}
-table.list.issues thead tr th a {
-    font-size: 13px;
-}
-table.list.issues tbody tr td {
-    border-color: #C9C9C9;
-}
-table.list.issues th {
-    background-color: #DBDBDB;
-}
-table.list tr.issue a {
-    color: #000 !important;
-}
-/* culori bg issues in functie de status */
-
-table.list.issues tr.status-1 td.subject {
-    background: linear-gradient(to right, rgba(204, 250, 250, 0) 0%, rgba(204, 250, 250, 1) 100%);
-}
-table.list.issues tr.status-1 td.status {
-    background: linear-gradient(to left, rgba(204, 250, 250, 0) 0%, rgba(204, 250, 250, 1) 100%);
-}
-table.list.issues tr.status-2 td.subject {
-    background: linear-gradient(to right, rgba(118, 169, 220, 0) 0%, rgba(118, 169, 220, 1) 100%);
-}
-table.list.issues tr.status-2 td.status {
-    background: linear-gradient(to left, rgba(118, 169, 220, 0) 0%, rgba(118, 169, 220, 1) 100%);
-}
-table.list.issues tr.status-3 td.subject {
-    background: linear-gradient(to right, rgba(255, 176, 162, 0) 0%, rgba(255, 176, 162, 1) 100%);
-}
-table.list.issues tr.status-3 td.status {
-    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 176, 162, 1) 100%);
-}
-table.list.issues tr.status-5 td.subject {
-    background: linear-gradient(to right, rgba(164, 244, 126, 0) 0%, rgba(164, 244, 126, 1) 100%);
-}
-table.list.issues tr.status-5 td.status {
-    background: linear-gradient(to left, rgba(164, 244, 126, 0) 0%, rgba(164, 244, 126, 1) 100%);
-}
-table.list.issues tr.status-8 td.subject {
-    background: linear-gradient(to right, rgba(177, 210, 242, 0) 0%, rgba(177, 210, 242, 1) 100%);
-}
-table.list.issues tr.status-8 td.status {
-    background: linear-gradient(to left, rgba(250, 250, 250, 0) 0%, rgba(177, 210, 242, 1) 100%);
-}
-table.list.issues tr.status-9 td.subject {
-    background: linear-gradient(to right, rgba(216, 91, 77, 0) 0%, rgba(216, 91, 77, 1) 100%);
-}
-table.list.issues tr.status-9 td.status {
-    background: linear-gradient(to left, rgba(216, 91, 77, 0) 0%, rgba(216, 91, 77, 1) 100%);
-}
-table.list.issues tr.status-10 td.subject {
-    background: linear-gradient(to right, rgba(217, 173, 254, 0) 0%, rgba(217, 173, 254, 1) 100%);
-}
-table.list.issues tr.status-10 td.status {
-    background: linear-gradient(to left, rgba(217, 173, 254, 0) 0%, rgba(217, 173, 254, 1) 100%);
-}
-table.list.issues tr.status-20 td.subject {
-    background: linear-gradient(to right, rgba(190, 124, 248, 0) 0%, rgba(190, 124, 248, 1) 100%);
-}
-table.list.issues tr.status-20 td.status {
-    background: linear-gradient(to left, rgba(190, 124, 248, 0) 0%, rgba(190, 124, 248, 1) 100%);
+#sidebar .sidebar-resources td.department_name {
+	text-align: left;
+	padding-bottom: 0;
 }
 
-/*_______________*/
-
-/* SECTIUNE ISSUE*/
-
-div.issue {
-	background:none !important;
+#sidebar #resources_list table {
+	background-color: #ebf3f6;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #a2bcc6;
+    margin-bottom: 8px;
+}
+#sidebar #resources_list table td {
+	width: 33%;
 }
 
-#issue_tree table.list.issues tbody tr td,
-#relations table.list.issues tbody tr td {
-    border-color: transparent !important;
+.js-issue-header.lb_fixed .issue-title {
+	margin: -5px -4px 0;
 }
-
-#issue_tree table.list.issues .context-menu-selection,
-#relations table.list.issues .context-menu-selection {
-	background: none !important;
+.js-issue-header.lb_fixed #button_bar {
+	position: absolute;
+    right: 0;
+    top: -32px;
+    width: auto;
 }
-
-#issue_tree table.list.issues tr:hover,
-#relations table.list.issues tr:hover {
-    background: none !important;
-}
-
-table.list.issues a.issue {
-	background:none;
-}
-
-div.description {
-	/*background: linear-gradient(to bottom, rgba(105, 124, 248, 0) 0%, rgba(190, 124, 248, 1) 100%);*/
-	overflow: visible;
-}
-
-#history div.journal {
-	padding-top:10px;
-}
-
-div.issue.status-1 table.attributes td.status {
-    font-weight: bold;
-    color:rgba(204, 250, 250, 1);
-}
-
-div.issue.status-2 table.attributes td.status {
-    font-weight: bold;
-    color:rgba(118, 169, 220, 1);
-}
-
-div.issue.status-3 table.attributes td.status {
-    font-weight: bold;
-    color:rgba(255, 176, 162, 1);
-}
-
-div.issue.status-5 table.attributes td.status {
-    font-weight: bold;
-    color:rgba(164, 244, 126, 1);
-}
-
-div.issue.status-8 table.attributes td.status {
-    font-weight: bold;
-    color:rgba(177, 210, 242, 1) ;
-}
-
-div.issue.status-9 table.attributes td.status {
-    font-weight: bold;
-    color:rgba(216, 91, 77, 1) ;
-}
-
-div.issue.status-10 table.attributes td.status {
-    font-weight: bold;
-    color:rgba(217, 173, 254, 1);
-}
-
-div.issue.status-20 table.attributes td.status {
-    font-weight: bold;
-    color:rgba(190, 124, 248, 1);
-}
-
-/*
-	Hacks for Luxury button plugin issues
-*/
-div#main div#content div.issue div.lu_issue_confirms_link {
-	display:none;
-}
-
-div#main div#content div.issue div.description + hr {
-	display:none;
-}
-
-div#history span.button_info {
-	display: none;
-}
-/*
-	end
-*/
-
-
