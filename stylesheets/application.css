@@ -273,6 +273,7 @@ p.breadcrumb { margin: 4px 0 15px 0; }
 div#content > div.contextual { margin-top: 10px; margin-right: 10px; }
 div#content > div.contextual a, div#content > div.contextual a:hover {color: #FFFFFF;}
 div#content > div.contextual a:hover {text-decoration: underline;}
+.controller-wiki.action-show div#content > div.contextual a, .controller-wiki.action-show div#content > div.contextual a:hover {color: #666666;}
 
 #roadmap { margin: 10px; }
 
