@@ -818,7 +818,7 @@ table.progress td.todo, table.list.issues table.progress td.todo:first-child {
 	display: block;
 }
 
-.issue-section .issue td.status span {
+.issue-section .issue .attributes td.status span {
 	display: inline-block;
 	padding: 5px 10px;
 	background-color: #CCFAFA;
@@ -828,58 +828,58 @@ table.progress td.todo, table.list.issues table.progress td.todo:first-child {
     border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;
 }
-.issue-section .issue.status-2 td.status span {
+.issue-section .issue.status-2 .attributes td.status span {
 	background-color: rgb(118, 169, 220);
 }
-.issue-section .issue.status-3 td.status span {
+.issue-section .issue.status-3 .attributes td.status span {
 	background-color: rgb(255, 176, 162);
 }
 /* Completed */
-.issue-section .issue.status-5 td.status span {
+.issue-section .issue.status-5 .attributes td.status span {
     background-color: rgb(164, 244, 126);
 }
 /* Killed*/
-.issue-section .issue.status-6 td.status span {
+.issue-section .issue.status-6 .attributes td.status span {
     background-color: rgb(204, 204, 204);
 }
-.issue-section .issue.status-8 td.status span {
+.issue-section .issue.status-8 .attributes td.status span {
 	background-color: rgb(177, 210, 242);
 }
-.issue-section .issue.status-9 td.status span {
+.issue-section .issue.status-9 .attributes td.status span {
 	background-color: rgb(216, 91, 77);
 }
-.issue-section .issue.status-10 td.status span {
+.issue-section .issue.status-10 .attributes td.status span {
 	background-color: rgb(217, 173, 254);
 }
 /* Reopen */
-.issue-section .issue.status-11 td.status span {
+.issue-section .issue.status-11 .attributes td.status span {
     background-color: rgb(255, 255, 0);
 }
 /* Ready for release */
-.issue-section .issue.status-12 td.status span {
+.issue-section .issue.status-12 .attributes td.status span {
     background-color: rgb(153, 204, 102);
 }
 /* Party */
-.issue-section .issue.status-13 td.status span {
+.issue-section .issue.status-13 .attributes td.status span {
     background-color: rgb(164, 244, 126);
 }
 /* Fixed */
-.issue-section .issue.status-17 td.status span {
+.issue-section .issue.status-17 .attributes td.status span {
     background-color: rgb(164, 244, 126);
 }
 /* Budged Ready */
-.issue-section .issue.status-18 td.status span {
+.issue-section .issue.status-18 .attributes td.status span {
     background-color: rgb(255, 144, 0);
 }
 /* Approved */
-.issue-section .issue.status-19 td.status span {
+.issue-section .issue.status-19 .attributes td.status span {
     background-color: rgb(255, 204, 153);
 }
-.issue-section .issue.status-20 td.status span {
+.issue-section .issue.status-20 .attributes td.status span {
 	background-color: rgb(190, 124, 248);
 }
 /* Delivered */
-.issue-section .issue.status-21 td.status span {
+.issue-section .issue.status-21 .attributes td.status span {
     background-color: rgb(164, 244, 126);
 }
 
@@ -1120,7 +1120,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eec9ca', end
 	display: inline-block;
 	height: 20px;
 }
-.tooltip-parents-content a { display: inline-block; padding-left: 400px; padding-top: 3px; padding-bottom: 4px; margin-left: -400px; #min-width: 120px; #background-color: #F5F5F5;}
+.tooltip-parents-content a { display: inline-block; padding-left: 400px; padding-top: 3px; padding-bottom: 4px; margin-left: -400px; min-width: 120px; background-color: #F5F5F5;}
 .tooltip-parents-content a:hover {background-color: #dbe9f7;}
 .top-tooltip-container .tooltip-hover:hover .tooltip-parents-content {
 	display:block;
