@@ -37,14 +37,12 @@ body { color: #333; background-color: #fff; line-height: 1.4; }
 table.list.issues .odd {
     background: none;
 }
-table.list.issues a:hover {
-    text-decoration: none !important;
-}
-table.list.issues .context-menu-selection {
+
+table.list.issues .context-menu-selection td {
     background: rgba(80, 122, 170, 0.70) !important;
 }
 table.list.issues thead tr th a {
-    color: #5a6fae !important;
+    color: #585858 !important;
     font-weight: 900;
 }
 table.list.issues a, table.list.issues a:link, table.list.issues a:visited, table.list.issues a:hover {
@@ -53,7 +51,7 @@ table.list.issues a, table.list.issues a:link, table.list.issues a:visited, tabl
 table.list.issues tr {
     color: #000 !important;
 }
-table.list.issues tr:hover {
+table.list.issues tr:hover td {
     background: rgba(80, 122, 170, 0.51) !important;
 }
 table.list.issues .tracker-2 {
@@ -63,20 +61,33 @@ table.list.issues .subject {
     max-width: 630px;
 }
 /* bug issues */
+table.list.issues a:hover {
+	text-decoration: underline;
+}
 
 table.list.issues .tracker-1 .tracker {
-    background: url("../images/icon-bug.png") no-repeat center center;
+    background-image: url("../images/icon-bug.png");
+    background-position: center center;
+    background-repeat: no-repeat;
     color: transparent;
     overflow: hidden;
     text-indent: -500px
 }
 table.list.issues .tracker-1.priority-5 .tracker {
-    background: url("../images/icon-bug-critical.png") no-repeat center center;
+	background-image: url("../images/icon-bug-critical.png");
+	background-position: center center;
+    background-repeat: no-repeat;
 }
 /* table borders */
 
 table.list.issues thead tr th {
     border-color: #C9C9C9;
+}
+table.list.issues thead tr th[title~="Subject"] {
+	text-align: left !important;
+}
+table.list.issues input[type="checkbox"] {
+	margin: 0;
 }
 table.list.issues thead tr th a {
     font-size: 13px;
@@ -85,117 +96,139 @@ table.list.issues tbody tr td {
     border-color: #C9C9C9;
 }
 table.list.issues th {
-    background-color: #DBDBDB;
+    background-color: #e8e8e8;
 }
+table.list.issues td {
+	padding: 3px;
+}
+table.list.issues .tracker-2 td, table.list.issues .tracker-5 td {
+	padding: 6px 3px;
+	height: 18px;
+}
+
 table.list tr.issue a {
     color: #000 !important;
 }
 /* culori bg issues in functie de status */
-table.list.issues tr.status-1 td.subject {
-    background: linear-gradient(to right, rgba(204, 250, 250, 0) 0%, rgba(204, 250, 250, 1) 100%);
+table.list.issues tr.status-1 td {
+    background-color: rgb(204, 250, 250);
 }
-table.list.issues tr.status-1 td.status {
-    background: linear-gradient(to left, rgba(204, 250, 250, 0) 0%, rgba(204, 250, 250, 1) 100%);
+
+table.list.issues tr.status-2 td {
+    background-color: rgb(118, 169, 220);
 }
-table.list.issues tr.status-2 td.subject {
-    background: linear-gradient(to right, rgba(118, 169, 220, 0) 0%, rgba(118, 169, 220, 1) 100%);
+table.list.issues tr.status-2.tracker-2 td.status, table.list.issues tr.status-2.tracker-5 td.status {
+	color: rgb(118, 169, 220);
 }
-table.list.issues tr.status-2 td.status {
-    background: linear-gradient(to left, rgba(118, 169, 220, 0) 0%, rgba(118, 169, 220, 1) 100%);
+
+table.list.issues tr.status-3 td {
+    background-color: rgb(255, 176, 162);
 }
-table.list.issues tr.status-3 td.subject {
-    background: linear-gradient(to right, rgba(255, 176, 162, 0) 0%, rgba(255, 176, 162, 1) 100%);
+table.list.issues tr.status-3.tracker-2 td.status, table.list.issues tr.status-3.tracker-5 td.status {
+	color: rgb(255, 176, 162)
 }
-table.list.issues tr.status-3 td.status {
-    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 176, 162, 1) 100%);
-}
+
 /* Completed */
 table.list.issues tr.status-5 td.subject {
-    background: linear-gradient(to right, rgba(164, 244, 126, 0) 0%, rgba(164, 244, 126, 1) 100%);
+    background-color: rgb(164, 244, 126);
 }
-table.list.issues tr.status-5 td.status {
-    background: linear-gradient(to left, rgba(164, 244, 126, 0) 0%, rgba(164, 244, 126, 1) 100%);
+table.list.issues tr.status-5.tracker-2 td.status, table.list.issues tr.status-5.tracker-5 td.status {
+	color: rgb(164, 244, 126);
 }
+
+
 /* Killed */
-table.list.issues tr.status-6 td.subject {
-    background: linear-gradient(to right, rgba(204, 204, 204, 0) 0%, rgba(204, 204, 204, 1) 100%);
+table.list.issues tr.status-6 td {
+    background-color: rgb(204, 204, 204);
 }
-table.list.issues tr.status-6 td.status {
-    background: linear-gradient(to left, rgba(204, 204, 204, 0) 0%, rgba(204, 204, 204, 1) 100%);
+table.list.issues tr.status-6.tracker-2 td.status, table.list.issues tr.status-6.tracker-5 td.status {
+	color: rgb(204, 204, 204);
 }
-table.list.issues tr.status-8 td.subject {
-    background: linear-gradient(to right, rgba(177, 210, 242, 0) 0%, rgba(177, 210, 242, 1) 100%);
+
+table.list.issues tr.status-8 td {
+    background-color: rgb(177, 210, 242);
 }
-table.list.issues tr.status-8 td.status {
-    background: linear-gradient(to left, rgba(250, 250, 250, 0) 0%, rgba(177, 210, 242, 1) 100%);
+table.list.issues tr.status-8.tracker-2 td.status, table.list.issues tr.status-8.tracker-5 td.status {
+	color: rgb(177, 210, 242);
 }
-table.list.issues tr.status-9 td.subject {
-    background: linear-gradient(to right, rgba(216, 91, 77, 0) 0%, rgba(216, 91, 77, 1) 100%);
+
+table.list.issues tr.status-9 td {
+    background-color: rgb(216, 91, 77);
 }
-table.list.issues tr.status-9 td.status {
-    background: linear-gradient(to left, rgba(216, 91, 77, 0) 0%, rgba(216, 91, 77, 1) 100%);
+table.list.issues tr.status-9.tracker-2 td.status, table.list.issues tr.status-9.tracker-5 td.status {
+	color: rgb(216, 91, 77);
 }
-table.list.issues tr.status-10 td.subject {
-    background: linear-gradient(to right, rgba(217, 173, 254, 0) 0%, rgba(217, 173, 254, 1) 100%);
+
+table.list.issues tr.status-10 td {
+    background-color: rgb(217, 173, 254);
 }
-table.list.issues tr.status-10 td.status {
-    background: linear-gradient(to left, rgba(217, 173, 254, 0) 0%, rgba(217, 173, 254, 1) 100%);
+table.list.issues tr.status-10.tracker-2 td.status, table.list.issues tr.status-10.tracker-5 td.status {
+	color: rgb(217, 173, 254);
 }
+
 /* Ready for Release */
-table.list.issues tr.status-12 td.subject {
-    background: linear-gradient(to right, rgba(153, 204, 102, 0) 0%, rgba(153, 204, 102, 1) 100%);
+table.list.issues tr.status-12 td {
+    background-color: rgb(153, 204, 102);
 }
-table.list.issues tr.status-12 td.status {
-    background: linear-gradient(to left, rgba(153, 204, 102, 0) 0%, rgba(153, 204, 102, 1) 100%);
+table.list.issues tr.status-12.tracker-2 td.status, table.list.issues tr.status-12.tracker-5 td.status {
+	color: rgb(153, 204, 102);
 }
+
 /* Reopen */
-table.list.issues tr.status-11 td.subject {
-    background: linear-gradient(to right, rgba(255, 255, 0, 0) 0%, rgba(255, 255, 0, 1) 100%);
+table.list.issues tr.status-11 td {
+    background-color: rgb(255, 255, 0);
 }
-table.list.issues tr.status-11 td.status {
-    background: linear-gradient(to left, rgba(255, 255, 0, 0) 0%, rgba(255, 255, 0, 1) 100%);
+table.list.issues tr.status-11.tracker-2 td.status, table.list.issues tr.status-11.tracker-5 td.status {
+	color: rgb(255, 255, 0);
 }
+
 /* Party */
-table.list.issues tr.status-13 td.subject {
-    background: linear-gradient(to right, rgba(164, 244, 126, 0) 0%, rgba(164, 244, 126, 1) 100%);
+table.list.issues tr.status-13 td {
+    background-color: rgb(164, 244, 126);
 }
-table.list.issues tr.status-13 td.status {
-    background: linear-gradient(to left, rgba(164, 244, 126, 0) 0%, rgba(164, 244, 126, 1) 100%);
+table.list.issues tr.status-13.tracker-2 td.status, table.list.issues tr.status-13.tracker-5 td.status {
+	color: rgb(164, 244, 126);
 }
+
 /* Fixed */
-table.list.issues tr.status-17 td.subject {
-    background: linear-gradient(to right, rgba(164, 244, 126, 0) 0%, rgba(164, 244, 126, 1) 100%);
+table.list.issues tr.status-17 td {
+    background-color: rgb(164, 244, 126);
 }
-table.list.issues tr.status-17 td.status {
-    background: linear-gradient(to left, rgba(164, 244, 126, 0) 0%, rgba(164, 244, 126, 1) 100%);
+table.list.issues tr.status-17.tracker-2 td.status, table.list.issues tr.status-17.tracker-5 td.status {
+	color: rgb(164, 244, 126);
 }
+
 /* Budged Ready */
-table.list.issues tr.status-18 td.subject {
-    background: linear-gradient(to right, rgba(255, 144, 0, 0) 0%, rgba(255, 144, 0, 1) 100%);
+table.list.issues tr.status-18 td {
+    background-color: rgb(255, 144, 0);
 }
-table.list.issues tr.status-18 td.status {
-    background: linear-gradient(to left, rgba(255, 144, 0, 0) 0%, rgba(255, 144, 0, 1) 100%);
+table.list.issues tr.status-18.tracker-2 td.status, table.list.issues tr.status-18.tracker-5 td.status {
+	color: rgb(255, 144, 0);
 }
+
 /* Approved */
-table.list.issues tr.status-19 td.subject {
-    background: linear-gradient(to right, rgba(255, 204, 153, 0) 0%, rgba(255, 204, 153, 1) 100%);
+table.list.issues tr.status-19 td {
+    background-color: rgb(255, 204, 153);
 }
-table.list.issues tr.status-19 td.status {
-    background: linear-gradient(to left, rgba(255, 204, 153, 0) 0%, rgba(255, 204, 153, 1) 100%);
+table.list.issues tr.status-19.tracker-2 td.status, table.list.issues tr.status-19.tracker-5 td.status {
+	color: rgb(255, 204, 153);
 }
-table.list.issues tr.status-20 td.subject {
-    background: linear-gradient(to right, rgba(190, 124, 248, 0) 0%, rgba(190, 124, 248, 1) 100%);
+
+table.list.issues tr.status-20 td {
+    background-color: rgb(190, 124, 248);
 }
-table.list.issues tr.status-20 td.status {
-    background: linear-gradient(to left, rgba(190, 124, 248, 0) 0%, rgba(190, 124, 248, 1) 100%);
+table.list.issues tr.status-20.tracker-2 td.status, table.list.issues tr.status-20.tracker-5 td.status {
+	color: rgb(190, 124, 248);
 }
+
 /* Delivered */
-table.list.issues tr.status-21 td.subject {
-    background: linear-gradient(to right, rgba(164, 244, 126, 0) 0%, rgba(164, 244, 126, 1) 100%);
+table.list.issues tr.status-21 td {
+    background-color: rgb(164, 244, 126);
 }
-table.list.issues tr.status-21 td.status {
-    background: linear-gradient(to left, rgba(164, 244, 126, 0) 0%, rgba(164, 244, 126, 1) 100%);
+table.list.issues tr.status-21.tracker-2 td.status, table.list.issues tr.status-21.tracker-5 td.status {
+	color: rgb(164, 244, 126);
 }
+
 
 /*_______________*/
 
@@ -210,8 +243,8 @@ div.issue {
     border-color: transparent !important;
 }
 
-#issue_tree table.list.issues .context-menu-selection,
-#relations table.list.issues .context-menu-selection {
+#issue_tree table.list.issues .context-menu-selection td,
+#relations table.list.issues .context-menu-selection td {
 	background: none !important;
 }
 
@@ -393,12 +426,8 @@ table.list tr.issue a { color: #666; }
 /*tr.odd {background-color: transparent;}
 tr.even {background-color: transparent;}
 table.list th {background-color: transparent;}*/
-tr.odd.priority-highest, table.list tbody tr.odd.priority-highest:hover { color: #900; font-weight: bold; }
 
-tr.odd.priority-highest { background: #ffc4c4; }
-tr.even.priority-highest { color: #900; font-weight: bold; }
 
-table.list tbody tr.even.priority-highest:hover { color: #900; font-weight: bold; }
 
 /*tr.even.priority-highest { background: #ffd4d4; }*/
 tr.priority-highest a, tr.priority-highest:hover a { color: #900; }
@@ -770,7 +799,7 @@ div.issue table.attributes th.status, div.issue table.attributes th.due-date {fo
 #issue_tree table.list.issues tr:hover, #relations table.list.issues tr:hover {
 	background-color: #ecf3f6 !important;
 }
-#issue_tree table.list.issues .context-menu-selection, #relations table.list.issues .context-menu-selection, #issue_tree table.list.issues .context-menu-selection:hover, #relations table.list.issues .context-menu-selection:hover {
+#issue_tree table.list.issues .context-menu-selection td, #relations table.list.issues .context-menu-selection td, #issue_tree table.list.issues .context-menu-selection:hover td, #relations table.list.issues .context-menu-selection:hover td {
 	background-color: #defad5 !important;
 }
 table.progress td.todo, table.list.issues table.progress td.todo:first-child {
@@ -1124,4 +1153,74 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eec9ca', end
 .tooltip-parents-content a:hover {background-color: #dbe9f7;}
 .top-tooltip-container .tooltip-hover:hover .tooltip-parents-content {
 	display:block;
+}
+
+.filters-form {
+	position: relative;
+}
+.filters-form #query_form_content {
+	width: 80%;
+}
+.filters-form p.buttons {
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	margin-top: -14px;
+	text-align: right;
+}
+
+@media only screen and (max-width: 1200px) {
+	.filters-form #query_form_content {
+	width: 72%;
+}
+}
+@media only screen and (max-width: 960px) {
+	.filters-form #query_form_content {
+		width: auto;
+	}
+	.filters-form p.buttons {
+		position: static;
+	}
+}
+
+
+table.list.issues .tracker-2 td, table.list.issues .tracker-5 td {
+	background: #ffffda !important; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffda 0%, #efefc3 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffda), color-stop(100%,#efefc3)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffda 0%,#efefc3 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffda 0%,#efefc3 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffda 0%,#efefc3 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffda 0%,#efefc3 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffda', endColorstr='#efefc3',GradientType=0 ) !important; /* IE6-9 */
+	box-shadow: 0 -3px 1px rgba(0, 0, 0, 0.08) inset; -webkit-box-shadow: 0 -3px 1px rgba(0, 0, 0, 0.08) inset; -moz-box-shadow: 0 -3px 1px rgba(0, 0, 0, 0.08) inset;
+
+}
+
+table.list.issues .tracker-5 td {
+	background: #e9f0f9 !important; /* Old browsers */
+background: -moz-linear-gradient(top,  #e9f0f9 0%, #d8e3f2 100%) !important; /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e9f0f9), color-stop(100%,#d8e3f2)) !important; /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #e9f0f9 0%,#d8e3f2 100%) !important; /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #e9f0f9 0%,#d8e3f2 100%) !important; /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #e9f0f9 0%,#d8e3f2 100%) !important; /* IE10+ */
+background: linear-gradient(to bottom,  #e9f0f9 0%,#d8e3f2 100%) !important; /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9f0f9', endColorstr='#d8e3f2',GradientType=0 ) !important; /* IE6-9 */
+
+}
+
+table.list.issues .tracker-2:hover td, table.list.issues .tracker-5:hover td, table.list.issues .context-menu-selection.tracker-2 td, table.list.issues .context-menu-selection.tracker-5 td  {
+	background: #efefc3 !important;
+	box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+table.list.issues .tracker-5:hover td {
+	background-color: #d8e3f2;
+}
+
+tr.issue.idnt td.subject a {
+    background: url("../images/bullet_arrow_right.png") no-repeat scroll 30px 50% rgba(0, 0, 0, 0);
+    padding-left: 45px;
+}
+table.list.issues .tracker-2 td.subject, table.list.issues .tracker-5 td.subject {
+	font-weight: bold;
 }
