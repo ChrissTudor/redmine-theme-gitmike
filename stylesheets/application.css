@@ -83,6 +83,12 @@ table.list.issues .tracker-1.priority-5 .tracker {
 table.list.issues thead tr th {
     border-color: #C9C9C9;
 }
+
+/*Align to left also the subject column from my page*/
+/*body.controller-my table.list.issues thead tr th:nth-child(4) {
+    text-align: left !important;
+}*/
+
 table.list.issues thead tr th[title="Sort by \"Subject\""] {
 	text-align: left !important;
 }
@@ -92,13 +98,12 @@ table.list.issues input[type="checkbox"] {
 table.list.issues thead tr th a {
     font-size: 13px;
 }
-table.list.issues thead tr th {
+table.list.issues tbody tr td {
+    border-color: #fff;
     text-align: center;
 }
 table.list.issues tbody tr td {
     border-color: #fff;
-    /*border:0;
-    border-top:1px solid white;*/
     text-align: center;
 }
 table.list.issues tbody tr td.subject {    
