@@ -84,10 +84,13 @@ table.list.issues thead tr th {
     border-color: #C9C9C9;
 }
 
+body.controller-my table.list.issues thead tr th {
+    text-align: center;
+}
 /*Align to left also the subject column from my page*/
-/*body.controller-my table.list.issues thead tr th:nth-child(4) {
+body.controller-my table.list.issues thead tr th:nth-child(4) {
     text-align: left !important;
-}*/
+}
 
 table.list.issues thead tr th[title="Sort by \"Subject\""] {
 	text-align: left !important;
