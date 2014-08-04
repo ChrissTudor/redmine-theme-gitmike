@@ -83,7 +83,7 @@ table.list.issues .tracker-1.priority-5 .tracker {
 table.list.issues thead tr th {
     border-color: #C9C9C9;
 }
-table.list.issues thead tr th[title~="Subject"] {
+table.list.issues thead tr th[title="Sort by \"Subject\""] {
 	text-align: left !important;
 }
 table.list.issues input[type="checkbox"] {
@@ -95,8 +95,11 @@ table.list.issues thead tr th a {
 table.list.issues tbody tr td {
     border-color: #fff;
     /*border:0;
-    border-top:1px solid white;
-    text-align: center;*/
+    border-top:1px solid white;*/
+    text-align: center;
+}
+table.list.issues tbody tr td.subject {    
+    text-align: left !important;
 }
 table.list.issues tr.group td {
 	text-align: left;
