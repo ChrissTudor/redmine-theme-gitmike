@@ -206,7 +206,7 @@ table.list.issues tr.status-11.tracker-2 td.status, table.list.issues tr.status-
 
 /* Party */
 table.list.issues tr.status-13 td {
-    background-color: rgb(164, 244, 126);
+    background-color: #c8f8b1;
 }
 table.list.issues tr.status-13.tracker-2 td.status, table.list.issues tr.status-13.tracker-5 td.status {
 	color: #54b923;
@@ -214,7 +214,7 @@ table.list.issues tr.status-13.tracker-2 td.status, table.list.issues tr.status-
 
 /* Fixed */
 table.list.issues tr.status-17 td {
-    background-color: rgb(164, 244, 126);
+    background-color: #c8f8b1;
 }
 table.list.issues tr.status-17.tracker-2 td.status, table.list.issues tr.status-17.tracker-5 td.status {
 	color: #54b923;
@@ -305,7 +305,7 @@ div.issue.status-3 table.attributes td.status {
 
 div.issue.status-5 table.attributes td.status {
     font-weight: bold;
-    color:rgba(164, 244, 126, 1);
+    color:#c8f8b1;
 }
 
 div.issue.status-8 table.attributes td.status {
@@ -887,7 +887,7 @@ table.progress td.todo, table.list.issues table.progress td.todo:first-child {
 }
 /* Completed */
 .issue-section .issue.status-5 .attributes td.status span {
-    background-color: rgb(164, 244, 126);
+    background-color: #c8f8b1;
 }
 /* Killed*/
 .issue-section .issue.status-6 .attributes td.status span {
@@ -912,11 +912,11 @@ table.progress td.todo, table.list.issues table.progress td.todo:first-child {
 }
 /* Party */
 .issue-section .issue.status-13 .attributes td.status span {
-    background-color: rgb(164, 244, 126);
+    background-color: #c8f8b1;
 }
 /* Fixed */
 .issue-section .issue.status-17 .attributes td.status span {
-    background-color: rgb(164, 244, 126);
+    background-color: #c8f8b1;
 }
 /* Budged Ready */
 .issue-section .issue.status-18 .attributes td.status span {
@@ -931,7 +931,7 @@ table.progress td.todo, table.list.issues table.progress td.todo:first-child {
 }
 /* Delivered */
 .issue-section .issue.status-21 .attributes td.status span {
-    background-color: rgb(164, 244, 126);
+    background-color: #c8f8b1;
 }
 
 
