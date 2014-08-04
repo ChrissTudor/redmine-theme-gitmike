@@ -69,8 +69,7 @@ table.list.issues .tracker-1 .tracker {
     background-image: url("../images/icon-bug.png");
     background-position: center center;
     background-repeat: no-repeat;
-    color: transparent;
-    overflow: hidden;
+    color: transparent;    
     text-indent: -500px
 }
 table.list.issues .tracker-1.priority-5 .tracker {
