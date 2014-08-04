@@ -92,6 +92,9 @@ table.list.issues input[type="checkbox"] {
 table.list.issues thead tr th a {
     font-size: 13px;
 }
+table.list.issues thead tr th {
+    text-align: center;
+}
 table.list.issues tbody tr td {
     border-color: #fff;
     /*border:0;
