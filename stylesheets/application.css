@@ -1264,3 +1264,7 @@ table.list.issues tr.idnt td.list-white-space {
   text-align:right;
   background: url('../images/bullet_arrow_right.png') no-repeat scroll 30px 50% white;
 }
+
+div.wiki {
+    word-wrap: break-word;
+}
