@@ -1253,3 +1253,14 @@ table.list.issues .tracker-2 td.subject, table.list.issues .tracker-5 td.subject
 	font-weight: bold;
 	text-align:left;
 }
+
+table.list.issues tr.idnt td.id {
+
+  text-align:right;
+}
+
+table.list.issues tr.idnt td.list-white-space {
+
+  text-align:right;
+  background: url('../images/bullet_arrow_right.png') no-repeat scroll 30px 50% white;
+}
