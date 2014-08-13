@@ -1268,3 +1268,10 @@ table.list.issues tr.idnt td.list-white-space {
 div.wiki {
     word-wrap: break-word;
 }
+
+@media print {
+    /*remove empty space used by sidebar*/
+   div#content {
+        margin-right: 0px;
+   }
+}
