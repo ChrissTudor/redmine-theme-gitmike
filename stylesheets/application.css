@@ -1259,9 +1259,11 @@ table.list.issues tr.idnt td.id {
   text-align:right;
 }
 
-table.list.issues tr.idnt td.list-white-space {
-  text-align:right;
-  background: white !important;
+table.list.issues tr.idnt td:first-child {
+  border-left:45px solid white !important;
+}
+table.list.issues tr.idnt.idnt-2 td:first-child {
+  border-left:85px solid white !important;
 }
 
 div.wiki {
