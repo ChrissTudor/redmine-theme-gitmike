@@ -732,7 +732,7 @@ div.issue table.attributes th {
 	padding-bottom: 0;
 }
 
-h3.subtitle, #release-notes-display > p:first-child, #issue_checklist > p:first-child {
+h3.subtitle, #release-notes-display > p:first-child, #issue_checklist > p:first-child, #testing-steps-display > p:first-child {
 	border-bottom: 1px solid #e7e7e7;
 	font-size: 18px;
 	font-weight: normal;
