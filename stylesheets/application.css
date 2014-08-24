@@ -740,7 +740,7 @@ h3.subtitle, #release-notes-display > p:first-child, #issue_checklist > p:first-
 	margin-bottom: 8px;
 }
 
-#release-notes-display > p:first-child strong, #issue_checklist > p:first-child strong, #testing-steps-display > p:first-child {
+#release-notes-display > p:first-child strong, #issue_checklist > p:first-child strong, #testing-steps-display > strong {
 	font-weight: normal;
 }
 
