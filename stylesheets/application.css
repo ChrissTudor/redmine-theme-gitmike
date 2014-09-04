@@ -343,6 +343,9 @@ div#main div#content div.issue div.description + hr {
 div#history span.button_info {
 	display: none;
 }
+#button_panel .loader.form_loader {
+    margin: 0px auto !important;    
+}
 /*
 	end
 */
