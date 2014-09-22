@@ -735,7 +735,7 @@ div.issue table.attributes th {
 	padding-bottom: 0;
 }
 
-h3.subtitle, #release-notes-display > p:first-child, #issue_checklist > p:first-child, #testing-steps-display > p:first-child {
+h3.subtitle, #release-notes-display > p:first-child, #checklist > p:first-child, #testing-steps-display > p:first-child {
 	font-family: "Trebuchet MS", Verdana, sans-serif;
     /*padding: 2px 10px 1px 0px;
     margin: 0 0 10px 0;*/
@@ -746,7 +746,7 @@ h3.subtitle, #release-notes-display > p:first-child, #issue_checklist > p:first-
 	margin-bottom: 8px;
 }
 
-#release-notes-display > p:first-child strong, #issue_checklist > p:first-child strong, #testing-steps-display > p:first-child strong {
+#release-notes-display > p:first-child strong, #checklist > p:first-child strong, #testing-steps-display > p:first-child strong {
 	font-weight: normal;
 }
 
