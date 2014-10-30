@@ -409,7 +409,7 @@ div#welcome-store-content h1, div#welcome-store-content h2, div#welcome-store-co
 a { color: #4183c4; }
 a:link, a:visited { color: #4183c4; }
 
-div.issue { background: #FFD; margin-bottom: 6px; border: 0 none; margin: 0; padding: 0; }
+div.issue { background: #FFD; margin-bottom: 6px; border: 0 none; margin: 0; padding: 0; clear: left;}
 div.issue.tooltip { padding: 6px; margin: 0 0 6px 0; }
 div.contact.details, div.deal.details { padding: 15px !important; margin: -11px -11px 6px; }
 
@@ -645,27 +645,16 @@ div#content > h2, div#content h2.contacts_header {
 }
 
 .issue-title .avatar-img {	position: absolute;	left: 10px;	top: 10px;}
-.issue-title .main-title {margin-left: 70px; margin-right: 350px; padding-top: 5px;}
+.issue-title .main-title {margin-left: 70px; margin-right: 20px; padding-top: 5px;}
 .issue-title .main-title .author {color:#eeeded; font-size: 11px;}
-.issue-title .main-title a, .issue-title .main-title a:hover {color: #d3ddff; text-decoration: underline;}
-.issue-title .main-title a:hover {text-decoration: none;}
+.issue-title .main-title h2 a, .issue-title .main-title h2 a:hover {color: #d3ddff; text-decoration: underline;}
+.issue-title .main-title h2 a:hover {text-decoration: none;}
 
 .issue-title .contextual {
-	background: rgb(75,84,93); /* Old browsers */
-background: -moz-linear-gradient(left,  rgba(75,84,93,0) 0%, rgba(75,84,93,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(75,84,93,0)), color-stop(100%,rgba(75,84,93,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  rgba(75,84,93,0) 0%,rgba(75,84,93,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  rgba(75,84,93,0) 0%,rgba(75,84,93,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  rgba(75,84,93,0) 0%,rgba(75,84,93,1) 100%); /* IE10+ */
-background: linear-gradient(to right,  rgba(75,84,93,0) 0%,rgba(75,84,93,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b545d', endColorstr='#4b545d',GradientType=1 ); /* IE6-9 */
-margin: 0 !important;
-    padding: 10px 10px 8px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-radius: 0 3px 0 0; -webkit-border-radius: 0 3px 0 0; -moz-border-radius: 0 3px 0 0;
-
+	float: left;
+	margin-top: 0;
+	margin-right: 4px;
+	padding-left: 0;
 }
 
 .issue-title h2 {
@@ -673,31 +662,33 @@ margin: 0 !important;
 	line-height: 1em;
     margin: 0 0 5px;
 }
+.issue-title h2 span {
+	font-size: 13px;
+	font-weight: normal;
+}
 .issue-title p {
 	margin: 0;
 }
-.issue-title a.icon {
+.issue-title a.icon span {
 	background: url(../images/icons.png) left 2px no-repeat;
-	color: #fff;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
-	padding-left: 19px;
-	margin-left: 5px;
+	padding-left: 15px;
 }
-.issue-title .contextual a:link, .issue-title .contextual a:visited {
-	color: #fff;
+
+.issue-title a.icon.icon-edit span {
+	background-position: left -97px;
+	padding-left: 15px;
 }
-.issue-title a.icon.icon-edit {
-	background-position: left -99px;
+.issue-title a.icon.icon-time-add span {
+	background-position: left -49px;
+	padding-left: 15px;
 }
-.issue-title a.icon.icon-time-add {
-	background-position: left -48px;
-}
-.issue-title a.icon.icon-fav-off {
+.issue-title a.icon.icon-fav-off span {
 	background-position: left -149px;
+	padding-left: 15px;
 }
-.issue-title a.icon.icon-copy {
-	background-position: left -199px;
+.issue-title a.icon.icon-copy span {
+	background-position: left -201px;
+	padding-left: 13px;
 }
 
 .issue-attributes {
@@ -753,9 +744,6 @@ h3.subtitle, #release-notes-display > p:first-child, #checklist > p:first-child,
 .issue-section p {
 	margin-bottom: 8px;
 	margin-top: 0;
-}
-.issue-section .contextual {
-	margin-top: 17px;
 }
 .issue-section .collapsable {
 	background-color: #C7D9E0;
@@ -950,12 +938,9 @@ table.progress td.todo, table.list.issues table.progress td.todo:first-child {
 	display: block;
 }
 .issue-buttons #button_bar {
-	position: absolute;
-	right: -12px;
-	top: -47px;
-	width: auto;
+	float: left;
 }
-.issue-buttons a.lu_button {
+.issue-buttons a.lu_button, .issue-title .contextual a:link, .issue-title .contextual a:visited {
 	background: #e7e7e7; /* Old browsers */
 background: -moz-linear-gradient(top,  #e7e7e7 0%, #d3d3d3 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e7e7e7), color-stop(100%,#d3d3d3)); /* Chrome,Safari4+ */
@@ -969,8 +954,9 @@ font-weight: normal;
 border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;
 border: 1px solid #000;
 padding: 4px 6px;
+display: inline-block;
 } 
-.issue-buttons a.lu_button:hover {
+.issue-buttons a.lu_button:hover, .issue-title .contextual a:hover {
 	background: #d3d3d3; /* Old browsers */
 background: -moz-linear-gradient(top,  #d3d3d3 0%, #e7e7e7 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d3d3d3), color-stop(100%,#e7e7e7)); /* Chrome,Safari4+ */
@@ -979,10 +965,10 @@ background: -o-linear-gradient(top,  #d3d3d3 0%,#e7e7e7 100%); /* Opera 11.10+ *
 background: -ms-linear-gradient(top,  #d3d3d3 0%,#e7e7e7 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #d3d3d3 0%,#e7e7e7 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3d3d3', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-9 */
+text-decoration: none;
 
 }
 #button_action_form {
-	margin-bottom: 15px;
 	padding: 0;
 	background-color: #fff;
 	border-top: 0 none;
@@ -994,6 +980,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3d3d3', end
 }
 .issue-buttons .btn_container {
 	margin-right: 2px;
+	display: inline-block;
 }
 #lu_form_cancel_btn {
 	background: none transparent;
@@ -1005,22 +992,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3d3d3', end
 	text-decoration: underline;
 }
 
-.issue-buttons a.no_redirect > span.lu_button_main, .issue-buttons a.no_redirect:hover > span.lu_button_main {
+.issue-buttons a.no_redirect > span.lu_button_main, .issue-buttons a.no_redirect:hover > span.lu_button_main, .issue-title a.icon span {
 	border: 0 none;
 	font-weight: normal;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	margin-right: 0;
 	padding-left: 12px;
-	background: url(../images/icons.png) left -253px no-repeat;
+	line-height: 1.4em;
+	display: inline-block;
+}
+.issue-title a.icon {
+	margin-right: 2px;
+}
+.issue-buttons a.no_redirect > span.lu_button_main, .issue-buttons a.no_redirect:hover > span.lu_button_main {
+	background: url(../images/icons.png) left -250px no-repeat;
 }
 .issue-buttons a.no_redirect.btn_comment > span.lu_button_main, .issue-buttons a.no_redirect.btn_comment:hover > span.lu_button_main {
 	padding-left: 16px;
-	background-position: left -304px;
+	background-position: left -302px;
+	text-decoration: none;
 }
-.issue-buttons a.no_redirect.btn_close > span.lu_button_main, .issue-buttons a.no_redirect.btn_close:hover > span.lu_button_main {
+.issue-buttons a.no_redirect.btn_close > span.lu_button_main, .issue-buttons a.no_redirect.btn_close:hover > span.lu_button_main, .issue-title a.icon.icon-del span {
 	padding-left: 15px;
-	background-position: left -413px;
+	background-position: left -411px;
 }
 .issue-buttons a.no_redirect.btn_checked > span.lu_button_main, .issue-buttons a.no_redirect.btn_checked:hover > span.lu_button_main {
 	padding-left: 16px;
