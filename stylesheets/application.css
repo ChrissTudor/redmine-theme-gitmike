@@ -719,6 +719,15 @@ div.issue table.attributes th {
     box-shadow: 0 0 5px rgba(50,50,50,.15); -webkit-box-shadow: 0 0 5px rgba(50,50,50,.15); -moz-box-shadow: 0 0 5px rgba(50,50,50,.15);
     line-height: 1.2em;
 }
+
+.issue-section .contextual {
+    margin-top: 17px;
+}
+
+.issue-section .issue-buttons .contextual {
+    margin-top: 0px;
+}
+
 .issue-section hr {
 	display: none;
 }
