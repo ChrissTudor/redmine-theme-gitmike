@@ -951,7 +951,7 @@ table.progress td.todo, table.list.issues table.progress td.todo:first-child {
 }
 .issue-buttons #button_bar {
 	position: absolute;
-	right: -12px;
+	left: 62px;
 	top: -47px;
 	width: auto;
 }
