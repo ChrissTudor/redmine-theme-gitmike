@@ -42,7 +42,7 @@ table.list.issues .context-menu-selection td {
     background: rgba(80, 122, 170, 0.70) !important;
 }
 table.list.issues thead tr th a {
-    color: #585858 !important;
+    color: #fff !important;
     font-weight: 900;
 }
 table.list.issues a, table.list.issues a:link, table.list.issues a:visited, table.list.issues a:hover {
@@ -80,7 +80,9 @@ table.list.issues .tracker-1.priority-5 .tracker {
 /* table borders */
 
 table.list.issues thead tr th {
-    border-color: #C9C9C9;
+    border: 1px solid #fff;
+    border-top: none;
+    border-bottom: none;
 }
 
 body.controller-my table.list.issues thead tr th {
@@ -117,7 +119,7 @@ table.list.issues tr.group td {
 	text-align: left;
 }
 table.list.issues th {
-    background-color: #e8e8e8;
+    background-color: #515151;
 }
 table.list.issues td {
 	padding: 3px;
@@ -367,7 +369,7 @@ div.filters h2 .scope_title a { color: #444; }
 div#content { margin-right: 300px; width: auto; }
 div#main.nosidebar div#content { margin-right: 0px; }
 
-#sidebar { width: 260px !important; padding: 0px 10px 20px 15px !important; background: whiteSmoke; border: 1px solid #A3A3A3; zoom: 1; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); }
+#sidebar { width: 260px !important; padding: 0px 10px 20px 15px !important; background: whiteSmoke; border: 1px solid #dbdbdb; zoom: 1; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); }
 
 div#content > h2, div#content h2.contacts_header { border-bottom: 1px solid #d8e6ec; background: #E6F1F6; text-shadow: 0px 1px white; -webkit-border-top-left-radius: 2px; -moz-border-radius-topleft: 2px; border-top-left-radius: 2px; -webkit-border-top-right-radius: 2px; -moz-border-radius-topright: 2px; border-top-right-radius: 2px; padding: 8px 20px; margin: -6px -10px 10px; }
 div#content > div.filters h2, div#content > #add-news > h2, div#content > #add-message > h2, div#content > #add-document > h2 { border-bottom: 1px solid #C5D5DD; background: #E6F1F6; text-shadow: 0px 1px white; -webkit-border-top-left-radius: 4px; -moz-border-radius-topleft: 4px; border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius-topright: 4px; border-top-right-radius: 4px; padding: 8px 20px; margin: -6px -10px 10px; }
@@ -404,7 +406,7 @@ div.filters h2 .scope_title a { color: #222; text-decoration: none; }
 
 div#welcome-store-content h1, div#welcome-store-content h2, div#welcome-store-content h3, div#welcome-store-content h4 { color: #222; }
 
-#content, #main.nosidebar #content { background: #fff; border: 1px solid #ddd; -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+#content, #main.nosidebar #content { background: #fff; border: 1px solid #dbdbdb; -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
 
 a { color: #4183c4; }
 a:link, a:visited { color: #4183c4; }
@@ -435,7 +437,6 @@ h2, h3, h4 { border-bottom: 0px; }
 #main-menu ul li a:hover { color: #4183c4; border-bottom: 2px solid #CFDCE8; background-color: #dce6ef; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fafbfd), color-stop(100%, #dce6ef)); background-image: -webkit-linear-gradient(#fafbfd, #dce6ef); background-image: -moz-linear-gradient(#fafbfd, #dce6ef); background-image: -o-linear-gradient(#fafbfd, #dce6ef); background-image: linear-gradient(#fafbfd, #dce6ef); background-repeat: repeat-x; text-decoration: underline; }
 
 table.list tbody td, table.list tbody tr:hover td { border: solid 1px #fff; }
-table.list thead th { border-width: 1px; border-style: solid; border-top-color: #ddd; border-right-color: #ddd; border-left-color: #ddd; border-bottom-color: #ddd; }
 
 .tabular label { padding-top: 4px; }
 
@@ -583,7 +584,7 @@ body.action-login #login-form table { padding: 3em; background: white; -webkit-b
 
 .controller-account.action-login div.flash, div.wiki div.flash { -webkit-box-shadow: 0 0 3px #cccccc; -moz-box-shadow: 0 0 3px #cccccc; box-shadow: 0 0 3px #cccccc; border: 1px solid #ddd !important; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; margin: 5px; }
 
-#content .tabs ul li a { -webkit-border-top-left-radius: 2px; -moz-border-radius-topleft: 2px; border-top-left-radius: 2px; -webkit-border-top-right-radius: 2px; -moz-border-radius-topright: 2px; border-top-right-radius: 2px; line-height: 1.3em; padding: 6px 10px 6px 10px; }
+#content .tabs ul li a { -webkit-border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topright: 5px; border-top-right-radius: 5px; line-height: 1.3em; padding: 6px 10px 6px 10px; }
 
 #sidebar a.selected { background-color: transparent; color: gray; font-weight: bold; }
 
@@ -721,7 +722,7 @@ div.issue table.attributes th {
 }
 .issue-section {
 	background-color: #fff;
-	border: 1px solid #A3A3A3;
+	border: 1px solid #dbdbdb;
 	border-radius: 3px;
 	margin: -6px -11px 20px;
     padding: 5px 15px 10px;
@@ -852,6 +853,12 @@ table.progress td.todo, table.list.issues table.progress td.todo:first-child {
 	float: none;
 	display: inline-block;
 	margin: 0px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+	-moz-border-top-right-radius: 5px;
 }
 .controller-issues.action-show #content .tabs ul li a{
 	height: 14px;
@@ -1293,4 +1300,15 @@ background: -ms-linear-gradient(top,  #e9f0f9 0%,#d8e3f2 100%) !important; /* IE
 background: linear-gradient(to bottom,  #e9f0f9 0%,#d8e3f2 100%) !important; /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9f0f9', endColorstr='#d8e3f2',GradientType=0 ) !important; /* IE6-9 */
 
+}
+/* LE */
+.action-page table.list.issues th {
+	color: #fff !important;
+}
+.action-show table.list.issues th {
+	background: #fff;
+	padding: 8px 0;
+}
+.action-show table.list.issues tr > th:first-child {
+	text-align: left;
 }
